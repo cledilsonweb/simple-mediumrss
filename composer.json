@@ -1,0 +1,23 @@
+{
+    "name": "cledilsonweb/simple-mediumrss",
+    "description": "PHP Library to read Medium RSS",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "Cledilson Nascimento",
+        "email": "44277678+cledilsonweb@users.noreply.github.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SimpleMediumRSS\\": "src/",
+            "SimpleMediumRSSTest\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
