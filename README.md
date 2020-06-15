@@ -6,9 +6,17 @@
 
 PHP Library to read Medium RSS
 
+## Install
+
+```
+composer require cledilsonweb/simple-mediumrss
+```
+
 ## Usage
 
 ``` php
+require __DIR__ . '/vendor/autoload.php';
+
 $simple = new SimpleMediumRSS('https://medium.com/feed/@Medium');
 
 echo $simple->getTitle();
