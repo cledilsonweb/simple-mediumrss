@@ -1,5 +1,9 @@
 # SimpleMediumRSS
 
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE)
+[![Total Downloads][ico-downloads]][link-downloads]
+
 PHP Library to read Medium RSS
 
 ## Usage
@@ -33,7 +37,7 @@ If you discover any security related issues or have any suggestions, please [cre
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/cledilsonweb/simple-mediumrss.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
