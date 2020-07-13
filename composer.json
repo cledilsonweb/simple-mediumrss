@@ -6,9 +6,14 @@
         "phpunit/phpunit": "^8.5"
     },
     "license": "MIT",
+    "homepage": "https://github.com/cledilsonweb/simple-mediumrss",
+    "keywords": [
+        "medium",
+        "rss"
+    ],
     "authors": [{
         "name": "Cledilson Nascimento",
-        "email": "44277678+cledilsonweb@users.noreply.github.com"
+        "email": "contato@cledilsonweb.com.br"
     }],
     "require": {},
     "autoload": {

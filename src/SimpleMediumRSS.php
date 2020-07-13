@@ -4,12 +4,15 @@ namespace SimpleMediumRSS;
 
 use Error;
 use Exception;
-use SimpleMediumRSS\Channel\Channel;
 use SimpleMediumRSS\Exception\InvalidArgumentException;
 use SimpleMediumRSS\Exception\SimpleLoadException;
 use SimpleMediumRSS\Item\ItemSet;
 use SimpleXMLElement;
 
+/**
+ * Main class. Reads Medium RSS feed.
+ * @author cledilsonweb
+ */
 class SimpleMediumRSS
 {
 
@@ -31,6 +34,9 @@ class SimpleMediumRSS
     private $baseUrl = 'https://medium.com/feed/';
 
 
+    /**
+     * @param string|null $rssUrl
+     */
     public function __construct(string $rssUrl = null)
     {
         if (!empty($rssUrl)) {
@@ -42,16 +48,37 @@ class SimpleMediumRSS
         }
     }
 
+    /**
+     * Access Medium RSS using user profile
+     * 
+     * @param string $user
+     * 
+     * @return void
+     */
     public function fromUserProfile(string $user): void
     {
         $this->init($this->baseUrl . '@' . $user);
     }
 
+    /**
+     * Access Medium RSS using the publication. (Example: the-story)
+     * 
+     * @param string $publication
+     * 
+     * @return void
+     */
     public function fromPublication(string $publication): void
     {
         $this->init($this->baseUrl . $publication);
     }
 
+    /**
+     * Initializes the object
+     * 
+     * @param mixed $rssUrl
+     * 
+     * @return void
+     */
     private function init($rssUrl): void
     {
         try {
