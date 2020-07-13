@@ -15,7 +15,9 @@
         "name": "Cledilson Nascimento",
         "email": "contato@cledilsonweb.com.br"
     }],
-    "require": {},
+    "require": {
+        "php": "^7.2 || ^8.0"
+    },
     "autoload": {
         "psr-4": {
             "SimpleMediumRSS\\": "src/",

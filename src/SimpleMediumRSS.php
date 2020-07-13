@@ -2,6 +2,7 @@
 
 namespace SimpleMediumRSS;
 
+use DateTime;
 use Error;
 use Exception;
 use SimpleMediumRSS\Exception\InvalidArgumentException;
@@ -137,8 +138,9 @@ class SimpleMediumRSS
     /**
      * Get the value of lastBuildDate
      */
-    public function getLastBuildDate()
+    public function getLastBuildDate(string $format = 'Y-m-d H:i:s')
     {
-        return $this->lastBuildDate;
+        $date = new DateTime($this->lastBuildDate);
+        return $date->format($format);
     }
 }
