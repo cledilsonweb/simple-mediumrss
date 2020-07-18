@@ -29,6 +29,7 @@ foreach($itens as $item){
     echo $item->getContent();
 }
 ```
+For more, please: [Simple MediumRSS Wiki](https://github.com/cledilsonweb/simple-mediumrss/wiki)
 
 ## Change log
 
