@@ -88,7 +88,7 @@ class SimpleMediumRSS
                 throw new SimpleLoadException("Could not load URL: " . $rssUrl);
             }
         } catch (Error | Exception $e) {
-            throw new SimpleLoadException("Could not load URL: " . $rssUrl);
+            throw new SimpleLoadException("Could not load URL: {$e->getMessage()}" . $rssUrl);
         }
 
         $channel = $this->xml->channel;
