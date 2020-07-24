@@ -83,9 +83,9 @@ class SimpleMediumRSS
     private function init($rssUrl): void
     {
         if(!extension_loaded('simplexml')){
-            throw new SimpleLoadException("SimpleXML extension was not loaded");
+            throw new SimpleLoadException("SimpleXML extension was not loaded (Ex.: php-xml php*VERSION*-xml)");
         }
-        
+
         try {
             $this->xml = simplexml_load_file($rssUrl);
             if (!$this->xml) {

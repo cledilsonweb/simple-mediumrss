@@ -12,6 +12,8 @@ PHP Library to read Medium RSS
 composer require cledilsonweb/simple-mediumrss
 ```
 
+The php-mbstring and php-xml are dependecies on PHP installation and configuration.
+
 ## Usage
 
 ``` php
